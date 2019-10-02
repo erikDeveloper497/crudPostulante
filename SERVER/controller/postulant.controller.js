@@ -26,11 +26,9 @@ postulantCtrl.createPsotulant = async (req, res)=>{
         expLab: req.body.expLab
     });
     await Postulante.save();
-    
     res.json({
         status: 'Postulant saved'
-    }); 
-    
+    });
 };
 
 
